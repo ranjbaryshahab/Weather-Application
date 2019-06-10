@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1300.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.shahab.weather.controller.UiController">
+    <children>
+        <Pane prefHeight="47.0" prefWidth="1300.0" AnchorPane.bottomAnchor="553.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <AnchorPane id="background" layoutY="49.0" prefHeight="650.0" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="46.0">
+            <children>
+                <AnchorPane layoutX="197.0" layoutY="202.0" prefHeight="151.0" prefWidth="479.0">
+                    <children>
+                        <Pane layoutY="1.0" prefHeight="148.0" prefWidth="94.0">
+                            <children>
+                                <Label fx:id="lblDay1" layoutX="14.0" layoutY="12.0" prefHeight="31.0" prefWidth="70.0" text="Thu 14" textFill="WHITE">
+                                    <font>
+                                        <Font name="Chilanka Regular" size="15.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fx:id="iconWeatherDay1" fitHeight="38.0" fitWidth="35.0" layoutX="10.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/weather/sunny.png" />
+                                    </image>
+                                </ImageView>
+                                <Label fx:id="lblDayAirTemperature1" layoutX="14.0" layoutY="75.0" prefHeight="43.0" prefWidth="55.0" text="21°" textFill="WHITE">
+                                    <font>
+                                        <Font name="Chilanka Regular" size="28.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="lblNightAirTemperature1" layoutX="60.0" layoutY="80.0" prefHeight="37.0" prefWidth="34.0" text="8°" textFill="WHITE">
+                                    <font>
+                                        <Font name="Chilanka Regular" size="17.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="lblWeatherDay1" layoutX="14.0" layoutY="113.0" prefHeight="31.0" prefWidth="79.0" text="Sunny" textFill="WHITE">
+                                    <font>
+                                        <Font name="Chilanka Regular" size="13.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                        <Pane layoutX="94.0" layoutY="1.0" prefHeight="148.0" prefWidth="94.0">
+                            <children>
+                                <Label fx:id="lblDay2" layoutX="14.0" layoutY="12.0" prefHeight="31.0" prefWidth="70.0" text="Thu 14" textFill="WHITE">
+                                    <font>
+                                        <Font name="Chilanka Regular" size="15.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fx:id="iconWeatherDay2" fitHeight="38.0" fitWidth="35.0" layoutX="10.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/weather/sunny.png" />
+                                    </image>
+                                </ImageView>
+                                <Label fx:id="lblDayAirTemperature2" layoutX="14.0" layoutY="75.0" prefHeight="43.0" prefWidth="55.0" text="21°" textFill="WHITE">
+                                    <font>
+                                        <Font name="Chilanka Regular" size="28.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="lblNightAirTemperature2" layoutX="60.0" layoutY="80.0" prefHeight="37.0" prefWidth="34.0" text="8°" textFill="WHITE">
+                                    <font>
+                                        <Font name="Chilanka Regular" size="17.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="lblWeatherDay2" layoutX="14.0" layoutY="113.0" prefHeight="31.0" prefWidth="79.0" text="Sunny" textFill="WHITE">
+                                    <font>
+                                        <Font name="Chilanka Regular" size="13.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                        <Pane layoutX="188.0" layoutY="1.0" prefHeight="148.0" prefWidth="94.0">
+                            <children>
+                                <Label fx:id="lblDay3" layoutX="14.0" layoutY="12.0" prefHeight="31.0" prefWidth="70.0" text="Thu 14" textFill="WHITE">
+                                    <font>
+                                        <Font name="Chilanka Regular" size="15.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fx:id="iconWeatherDay3" fitHeight="38.0" fitWidth="35.0" layoutX="10.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/weather/sunny.png" />
+                                    </image>
+                                </ImageView>
+                                <Label fx:id="lblDayAirTemperature3" layoutX="14.0" layoutY="75.0" prefHeight="43.0" prefWidth="55.0" text="21°" textFill="WHITE">
+                                    <font>
+                                        <Font name="Chilanka Regular" size="28.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="lblNightAirTemperature3" layoutX="60.0" layoutY="80.0" prefHeight="37.0" prefWidth="34.0" text="8°" textFill="WHITE">
+                                    <font>
+                                        <Font name="Chilanka Regular" size="17.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="lblWeatherDay3" layoutX="14.0" layoutY="113.0" prefHeight="31.0" prefWidth="79.0" text="Sunny" textFill="WHITE">
+                                    <font>
+                                        <Font name="Chilanka Regular" size="13.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                        <Pane layoutX="282.0" layoutY="1.0" prefHeight="148.0" prefWidth="94.0">
+                            <children>
+                                <Label fx:id="lblDay4" layoutX="14.0" layoutY="12.0" prefHeight="31.0" prefWidth="70.0" text="Thu 14" textFill="WHITE">
+                                    <font>
+                                        <Font name="Chilanka Regular" size="15.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fx:id="iconWeatherDay4" fitHeight="38.0" fitWidth="35.0" layoutX="10.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/weather/sunny.png" />
+                                    </image>
+                                </ImageView>
+                                <Label fx:id="lblDayAirTemperature4" layoutX="14.0" layoutY="75.0" prefHeight="43.0" prefWidth="55.0" text="21°" textFill="WHITE">
+                                    <font>
+                                        <Font name="Chilanka Regular" size="28.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="lblNightAirTemperature4" layoutX="60.0" layoutY="80.0" prefHeight="37.0" prefWidth="34.0" text="8°" textFill="WHITE">
+                                    <font>
+                                        <Font name="Chilanka Regular" size="17.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="lblWeatherDay4" layoutX="14.0" layoutY="113.0" prefHeight="31.0" prefWidth="79.0" text="Sunny" textFill="WHITE">
+                                    <font>
+                                        <Font name="Chilanka Regular" size="13.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                        <Pane layoutX="376.0" layoutY="1.0" prefHeight="148.0" prefWidth="94.0">
+                            <children>
+                                <Label fx:id="lblDay5" layoutX="14.0" layoutY="12.0" prefHeight="31.0" prefWidth="70.0" text="Thu 14" textFill="WHITE">
+                                    <font>
+                                        <Font name="Chilanka Regular" size="15.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fx:id="iconWeatherDay5" fitHeight="38.0" fitWidth="35.0" layoutX="10.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/weather/sunny.png" />
+                                    </image>
+                                </ImageView>
+                                <Label fx:id="lblDayAirTemperature5" layoutX="14.0" layoutY="75.0" prefHeight="43.0" prefWidth="55.0" text="21°" textFill="WHITE">
+                                    <font>
+                                        <Font name="Chilanka Regular" size="28.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="lblNightAirTemperature5" layoutX="60.0" layoutY="80.0" prefHeight="37.0" prefWidth="34.0" text="8°" textFill="WHITE">
+                                    <font>
+                                        <Font name="Chilanka Regular" size="17.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="lblWeatherDay5" layoutX="14.0" layoutY="113.0" prefHeight="31.0" prefWidth="79.0" text="Sunny" textFill="WHITE">
+                                    <font>
+                                        <Font name="Chilanka Regular" size="13.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                    </children>
+                </AnchorPane>
+                <Label layoutX="174.0" layoutY="159.0" prefHeight="43.0" prefWidth="79.0" text="Daily" textFill="WHITE">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Label>
+                <Pane layoutX="924.0" layoutY="125.0" prefHeight="304.0" prefWidth="309.0">
+                    <children>
+                        <Label fx:id="lblCity" alignment="CENTER" layoutX="41.0" layoutY="21.0" prefHeight="85.0" prefWidth="228.0" text="Tehran" textFill="WHITE">
+                            <font>
+                                <Font name="Chilanka Regular" size="58.0" />
+                            </font>
+                        </Label>
+                        <ImageView fx:id="iconWeatherToday" fitHeight="101.0" fitWidth="108.0" layoutX="60.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/weather/sunny.png" />
+                            </image>
+                        </ImageView>
+                        <Label fx:id="lblAirTemperatureToday" layoutX="164.0" layoutY="114.0" prefHeight="115.0" prefWidth="108.0" text="21°" textFill="WHITE">
+                            <font>
+                                <Font name="Chilanka Regular" size="64.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="lblWeatherToday" alignment="CENTER" layoutX="101.0" layoutY="229.0" prefHeight="47.0" prefWidth="108.0" text="Sunny" textFill="WHITE">
+                            <font>
+                                <Font name="Chilanka Regular" size="31.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
+
