@@ -147,11 +147,11 @@ public class UiController implements Initializable {
         apiController.getOpenWeather("https://api.openweathermap.org/data/2.5/forecast?q=Tehran&appid=477e6ee48ec496639b7e1f8900b5ed69&units=metric");
         setPointToChart();
 
-        lblDay1.setText(DateTime.getDate(1));
-        lblDay2.setText(DateTime.getDate(2));
-        lblDay3.setText(DateTime.getDate(3));
-        lblDay4.setText(DateTime.getDate(4));
-        lblDay5.setText(DateTime.getDate(5));
+        lblDay1.setText(DateTime.getDate(0));
+        lblDay2.setText(DateTime.getDate(1));
+        lblDay3.setText(DateTime.getDate(2));
+        lblDay4.setText(DateTime.getDate(3));
+        lblDay5.setText(DateTime.getDate(4));
 
 
         rotateImg(windHead);
@@ -234,7 +234,7 @@ public class UiController implements Initializable {
                 today.getData().addAll(new XYChart.Data(Integer.toString(dates[i].getHours()), (int) Math.ceil(apiController.getGetWeather().getLists().getMainWeathers().get(i).getTemp())));
 
             }
-            if (DateTime.getDayDate(dates[i]).equals(DateTime.getDay(1))) {
+            if (DateTime.getDayDate(dates[i]).equals(DateTime.getDay(0))) {
                 if (dates[i].getHours() == getHour()) {
                     lblWeatherDay1.setText(apiController.getGetWeather().getLists().getWeathers().get(i).getDescription());
                     lblDayAirTemperature1.setText((int) Math.ceil(apiController.getGetWeather().getLists().getMainWeathers().get(i).getTempMax()) + "°");
@@ -244,7 +244,7 @@ public class UiController implements Initializable {
                 day1.getData().addAll(new XYChart.Data(Integer.toString(dates[i].getHours()), (int) Math.ceil(apiController.getGetWeather().getLists().getMainWeathers().get(i).getTemp())));
 
             }
-            if (DateTime.getDayDate(dates[i]).equals(DateTime.getDay(2))) {
+            if (DateTime.getDayDate(dates[i]).equals(DateTime.getDay(1))) {
                 if (dates[i].getHours() == getHour()) {
                     lblWeatherDay2.setText(apiController.getGetWeather().getLists().getWeathers().get(i).getDescription());
                     lblDayAirTemperature2.setText((int) Math.ceil(apiController.getGetWeather().getLists().getMainWeathers().get(i).getTempMax()) + "°");
@@ -255,7 +255,7 @@ public class UiController implements Initializable {
 
             }
 
-            if (DateTime.getDayDate(dates[i]).equals(DateTime.getDay(3))) {
+            if (DateTime.getDayDate(dates[i]).equals(DateTime.getDay(2))) {
 
                 if (dates[i].getHours() == getHour()) {
                     lblWeatherDay3.setText(apiController.getGetWeather().getLists().getWeathers().get(i).getDescription());
@@ -267,7 +267,7 @@ public class UiController implements Initializable {
 
             }
 
-            if (DateTime.getDayDate(dates[i]).equals(DateTime.getDay(4))) {
+            if (DateTime.getDayDate(dates[i]).equals(DateTime.getDay(3))) {
                 if (dates[i].getHours() == getHour()) {
                     lblWeatherDay4.setText(apiController.getGetWeather().getLists().getWeathers().get(i).getDescription());
                     lblDayAirTemperature4.setText((int) Math.ceil(apiController.getGetWeather().getLists().getMainWeathers().get(i).getTempMax()) + "°");
@@ -278,7 +278,7 @@ public class UiController implements Initializable {
 
             }
 
-            if (DateTime.getDayDate(dates[i]).equals(DateTime.getDay(5))) {
+            if (DateTime.getDayDate(dates[i]).equals(DateTime.getDay(4))) {
                 lblWeatherDay5.setText(apiController.getGetWeather().getLists().getWeathers().get(i).getDescription());
                 lblDayAirTemperature5.setText((int) Math.ceil(apiController.getGetWeather().getLists().getMainWeathers().get(i).getTempMax()) + "°");
                 lblNightAirTemperature5.setText((int) Math.ceil(apiController.getGetWeather().getLists().getMainWeathers().get(i).getTempMin()) + "°");
